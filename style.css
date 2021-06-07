@@ -173,21 +173,22 @@ input[type="checkbox"]:checked + label{
 /* summary and clean all */
 .sum{
     width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 470px;
     list-style-type: none;
     background: #FFFFFF;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-left: 0px;
-}
-.bottom__tab{
+
     display: inline-flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 0;
 }
+/* .bottom__tab{
+    
+} */
 .sum__num{
     font-family: NotoSansCJKtc-Regular;
     font-size: 14px;
