@@ -173,7 +173,7 @@ input[type="checkbox"]:checked + label{
 /* summary and clean all */
 .sum{
     width: 500px;
-    margin-left: 470px;
+    margin: 0 auto;
     list-style-type: none;
     background: #FFFFFF;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
@@ -181,7 +181,7 @@ input[type="checkbox"]:checked + label{
     border-bottom-right-radius: 10px;
     padding-left: 0px;
 
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 0;
