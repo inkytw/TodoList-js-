@@ -1,0 +1,211 @@
+body{
+    background-image: linear-gradient(174deg, #FFD370 2%, #FFD370 46%, #FFFFFF 46%);
+    background-repeat: no-repeat;
+}
+h1{
+    font-family: BalooTamma2-Bold;
+    font-size: 48px;
+    color: #333333;
+    letter-spacing: 8.75px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 26px;
+}
+.wrapper{
+    width: 1440px;
+    height: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* todo input */
+.todo__input-block{
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+    border-radius: 10px;
+    width: 500px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+.todo__input{
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    width: 426px;
+    height: 48px;
+    padding: 0;
+    padding-left: 24px;
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 16px;
+    /* color: #9F9A91; */
+    letter-spacing: 0.7px;
+}
+.btn-new{
+    background: #333333;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    margin-left: 4px;
+    margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    font-family: NotoSansCJKtc-Medium;
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* todo list */
+.todo__list{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 0px;
+}
+/* tabs */
+.tab{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.tab li{
+    width: 166px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: NotoSansCJKtc-Bold;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+.tab__selected{
+    border-bottom: 2px solid #333333;
+    color: #333333;
+}
+.tab__unselected{
+    border-bottom: 2px solid #EFEFEF;
+    color: #9F9A91;
+}
+
+/* todo contents */
+.todo{
+    display: flex;
+}
+.todo:hover img{
+    visibility: visible;
+}
+.todo__check{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+input[type="checkbox"]:checked{
+    display:none;
+}
+input[type="checkbox"] + label{
+    width: 20px;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFD370;
+    display:none;
+    text-decoration:none;
+    border-bottom: none;
+}
+input[type="checkbox"]:checked + label{
+    display:inline-block;
+}
+.todo label{
+    text-decoration:none;
+    display: inline-block;
+    width: 392px;
+    line-height: 59px;
+    border-bottom: 1px solid #EFEFEF;
+    margin-top: 0;
+    margin-left: 0;
+
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 0.62px;
+}
+.todo__done label
+{
+    text-decoration:line-through;
+    color: rgba(51,51,51,0.30);
+    letter-spacing: 0.7px;
+}
+.btn-delete
+{
+    display: inline-block;
+    border: none;
+    padding: 0;
+    padding-right: 16px;
+    cursor: pointer;
+}
+.btn-delete-img{
+    width: 16px;
+    height: 16px;
+    margin-top: 22px;
+    margin-left: 16px;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* summary and clean all */
+.sum{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    background: #FFFFFF;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 0px;
+}
+.bottom__tab{
+    display: inline-flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 0;
+}
+.sum__num{
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    margin-left: 24px;
+    margin-right: 70px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    width: 103px
+}
+.clean__all{
+    font-family: NotoSansCJKtc-Regular;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #9F9A91;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    padding-left: 155px;
+    padding-right: 45px;
+    cursor: pointer;
+}

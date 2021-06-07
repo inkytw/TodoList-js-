@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" 
+          media="screen" charset="utf-8"> 
+    <link rel="stylesheet" href="style.css" type="text/css" 
+          media="screen" charset="utf-8">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Todo List</h1>
+        <div class="todo__input-block">
+            <input class="todo__input" type="text" placeholder="新增待辦事項" minlength="1" maxlength="48">
+            <button class="btn-new">+</button>
+        </div>
+        <ul class="todo__list">
+            <!-- Tab links -->
+            <ul class="tab">
+                <li id="all" class="tab__selected">全部</li>
+                <li id="unfinished" class="tab__unselected">待完成</li>
+                <li id="done" class="tab__unselected">已完成</li>
+            </ul>
+            <li class="todo">  
+                <input class="todo__check" id="c1" type="checkbox">
+                <label for="c1"><img src="images/check.jpg"></label>
+                <label>把冰箱發霉的檸檬拿去丟</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo todo__done"> 
+                <input class="todo__check" id="c2" type="checkbox" checked>
+                <label for="c2"><img src="images/check.jpg"></label>
+                <label>打電話叫媽媽匯款給我</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo"> 
+                <input class="todo__check" id="c3" type="checkbox">
+                <label for="c3"><img src="images/check.jpg"></label>
+                <label>整理電腦資料夾</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo todo__done"> 
+                <input class="todo__check" id="c4" type="checkbox" checked>
+                <label for="c4"><img src="images/check.jpg"></label>
+                <label>繳電費水費瓦斯費</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo"> 
+                <input class="todo__check" id="c5" type="checkbox">
+                <label for="c5"><img src="images/check.jpg"></label>
+                <label>刪訊息</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo"> 
+                <input class="todo__check" id="c6" type="checkbox">
+                <label for="c6"><img src="images/check.jpg"></label>
+                <label>約vicky禮拜三泡溫泉</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+            <li class="todo"> 
+                <input class="todo__check" id="c7" type="checkbox">
+                <label for="c7"><img src="images/check.jpg"></label>
+                <label>約ada禮拜四吃晚餐</label>
+                <div class="btn-delete"><img class="btn-delete-img" src="images/cancel.jpg"></div>
+            </li>
+        </ul>
+        <ul class="sum">
+            <!-- Tab links -->
+            <ul class="bottom__tab">
+                <li class="sum__num"><span id="todo__num">2</span> 個待完成項目</li>
+                <li class="clean__all">清除已完成項目</li>
+            </ul>
+        </ul>
+
+    </div>
+</body>
+</html>
