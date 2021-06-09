@@ -2,19 +2,19 @@
 let checkBoxIdNum = 8;
 
 // 點擊按鈕新增
-document.querySelector('.btn-new').addEventListener('click', function () {
+document.querySelector('.btn-new').addEventListener('click', () => {
     addTodos();
 });
 
 // 按 Enter 新增
-document.querySelector('.todo__input').addEventListener('keypress', function (e) {
+document.querySelector('.todo__input').addEventListener('keypress', (e) => {
     // Enter 對應鍵盤代碼：13
     if (e.which === 13) {
       addTodos();
     }
 });
 
-function addTodos() {
+const addTodos = () => {
     const inputValue = document.querySelector('.todo__input').value;
     
    // 檢查輸入欄位是否為空值
@@ -51,7 +51,7 @@ const escapeHtml = (unsafe) => {
 }
 
 // 點擊事件
-document.querySelector('.todo__list').addEventListener('click', function (event){
+document.querySelector('.todo__list').addEventListener('click', (event) => {
     const target = event.target;
     // 按刪除鍵刪除 todo
     if (target.classList.contains('btn-delete')) {
@@ -121,7 +121,7 @@ document.querySelector('.todo__list').addEventListener('click', function (event)
 });
 
 // 刪除全部
-document.querySelector('.clean__all').addEventListener('click', function (event){
+document.querySelector('.clean__all').addEventListener('click', (event) => {
     const todo_done = document.querySelectorAll('.todo__done')
     todo_done.forEach(
         (item) => {
